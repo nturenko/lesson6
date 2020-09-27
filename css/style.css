@@ -1,26 +1,78 @@
-*{
-    padding: 0 0;
+* {
+    padding: 0 0; 
     box-sizing: border-box;
 }
-h2{
+
+h2 {
     font-size: 40px;
 }
-.nav-menu{
+
+.nav-menu {
     border: 1px solid aqua;
 }
-#first-item{
-   font-size: 25px;
+
+#first-item {
+    font-size: 25px;
 }
-#link1{
-    color: red;
+#link1 {
+    color: red;   
 }
-.nav-menu a{
+.nav-menu a {
     font-weight: normal;
     text-decoration: none;
 }
-.nav-menu .menu-link{
+
+.nav-menu .menu-link {
     font-weight: 800;
 }
-.header .nav .nav-menu .nav-item{
-    background: rgb(100,50,50);
+
+.nav-menu > .menu-link {
+    font-weight: 800;
 }
+
+.nav-menu li { /* !!!Всеядный !!!!!!!  */
+    font-weight: 800;
+    /* background: rgb(42, 129, 68); */
+}
+
+.nav-menu > li {  /* !!! Родные потомки!!!!! */
+    font-weight: 800;
+    /* background: rgb(38, 160, 231); */
+}
+.nav-menu ~ li { /* !!! Многожёноц!!!!!! -------*/
+    font-weight: 800;
+    background: rgb(211, 231, 29);
+}
+.nav-menu + li { /* !!! Однолюб -------*/
+    font-weight: 800;
+    background: rgb(236, 26, 26);
+}
+
+
+.header nav.nav ul.nav-menu li.menu-item {
+    /* background: rgb(100,50,80); */
+}
+
+/* .class .class .class .class .class {
+}
+tag .class {
+}
+id {
+} */
+/* .block-first {
+    position: relative;
+} */
+.block-first .block-title {
+    position: relative;
+    top: 0;
+    left: 70px;
+    border-bottom: 1px solid black;
+    width: 280px;
+}
+
+.block-first .block-title:after {
+    content: "\260E";
+    position: absolute;
+    left: -46px;
+    top: 4px;
+    font-size: 28px;
